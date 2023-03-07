@@ -2,8 +2,38 @@
     margin: 0;
 }
 
+body, html{height: 100%}
 
-header {}
+body {background-color: var(--main-bg-color)}
+
+body .loadingContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    opacity: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+body .loadingContainer.fade{
+    opacity: 0;
+}
+
+body .loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body .loading img{
+    width: 90%
+}
+
+header {
+    background-color: 0;
+}
 
 main{}
 
@@ -31,9 +61,13 @@ footer a:hover{
 }
 
 :root{
+    /* Body */
     --main-bg-color: #f0f0f0;
-    --main-border-color: #f4f4f4;
-    --text-color: #333;
 
+    /* Header */
+    --header-bg-color: #f4f4f4;
+    --header-color: #333;
+
+    /* Footer */
     --link-color:#00d9ff
 }
