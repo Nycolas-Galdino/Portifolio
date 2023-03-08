@@ -8,11 +8,10 @@ function loadingScreen() {
         
         setTimeout(() => {
             loadingContainer.style.display = 'none'
-            document.querySelector('body').classList.remove('loadingContainer');
-            document.querySelector('body .container').style.display = 'block';
-        },1050)
-        
-        /* Removing the class `loadingContainer` from the body. */
+            
+            loadingContainer.remove()
 
+            document.querySelector('body .container').style.display = 'block';
+        },950)
     },1000)
 }
