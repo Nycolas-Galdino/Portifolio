@@ -10,7 +10,7 @@ html{
 body {
     display: flex;
     flex-grow: 1;
-
+    
     background-color: var(--main-bg-color)
 }
 
@@ -43,13 +43,22 @@ body .loading img{
     width: 90%
 }
 
+/* Fonts */
+
+    /* Shadow Into Light */
+@import url('https://fonts.googleapis.com/css2?family=Shadow+Into+Light&display=swap');
+
+    /* Caveat */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
 /* Container Page */
 
 body .container {
     display: flex;
     flex-grow: 1;
-
     width: 100%;
+
+    font-family: "Shadow Into Light", "Caveat", cursive;
 }
 
 /* Footer */
